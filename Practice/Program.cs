@@ -582,9 +582,53 @@ namespace Practice
 
             // Challenges 27 -----------------------------------------------------------
 
+            try
+            {
+                Console.WriteLine("Enter Your Price Of Orders");
+            decimal originalPrice = Convert.ToDecimal(Console.ReadLine());
+           
 
 
+
+                if (originalPrice > 0 && originalPrice < 25000)
+                {
+                    switch (originalPrice)
+                    {
+                        case var n when n <= 1000:
+                            Console.WriteLine("You dont have a discount total price is : " + CalculateDiscountedPrice(originalPrice, 0));
+                            break;
+                        case var n when n <= 2500:
+                            Console.WriteLine(" You have 5% discount the original Price is " + originalPrice + " and the price after discount is  : " + CalculateDiscountedPrice(originalPrice, 5));
+                            break;
+                        case var n when n <= 5000:
+                            Console.WriteLine("You have 10 % discount the original Price is " + originalPrice + " and the price after discount is  : " + CalculateDiscountedPrice(originalPrice, 10));
+                            break;
+                        case var n when n <= 10000:
+                            Console.WriteLine("You have 15 % discount the original Price is " + originalPrice + " and the price after discount is  : " + CalculateDiscountedPrice(originalPrice, 15));
+                            break;
+                        case var n when n > 10000:
+                            Console.WriteLine("You have 20 % discount the original Price is " + originalPrice + " and the price after discount is  : " + CalculateDiscountedPrice(originalPrice, 20));
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Plz Enter A price Betwee, 0 and 25000");
+                }
+            }
+            catch (Exception x )
+            {
+                Console.WriteLine(" Ple ENter A Number");
+            }
             Console.ReadKey();
+        }
+        static public decimal CalculateDiscountedPrice(decimal originalPrice, decimal discountPercentage)
+        {
+            decimal discountAmount = (originalPrice * discountPercentage) / 100;
+            decimal discountedPrice = originalPrice - discountAmount;
+            return discountedPrice;
         }
     }
 }
