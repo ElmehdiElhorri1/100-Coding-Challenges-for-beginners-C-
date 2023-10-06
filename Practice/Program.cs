@@ -3,6 +3,10 @@ using System.Diagnostics;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml.Linq;
+using System.Net.NetworkInformation;
+using System.Reflection.Emit;
+using System;
+using System.Linq;
 
 namespace Practice
 {
@@ -624,7 +628,27 @@ namespace Practice
             //    return discountedPrice;
             //}
 
+            // Challenges 28 -----------------------------------------------------------
+            //ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything
+            //but exactly 4 digits or exactly 6 digits.Your task is to create a function that 
+            //takes a string and returns true if the PIN is valid and false if it's not.
+            //public static bool ValidatePIN(string pin)
+            //{
+            //    if (pin.Length == 4 || pin.Length == 6)
+            //    {
+            //        return pin.All(char.IsDigit);
+            //    }
+            //    return false;
+            //
+            //------------------------------------------------------------------------------
+            // 1 zawji ola fardi 
+            // ila kan fardi add"_" radi wali zawbji
+            //change to char array boucliw   atbda mn 1  ++2
+            // wast for var chaincar   item =  Chars[i-1] + char[i]
+            // 9bl mn for arr of stri char of arry  9smha 3La 2
         }
-       
+      
+
+
     }
 }
