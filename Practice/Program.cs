@@ -646,9 +646,114 @@ namespace Practice
             //change to char array boucliw   atbda mn 1  ++2
             // wast for var chaincar   item =  Chars[i-1] + char[i]
             // 9bl mn for arr of stri char of arry  9smha 3La 2
-        }
-      
 
+            // Challenges 28 -----------------------------------------------------------
+            //Console.WriteLine("Months Number ");
+            //int Months = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Give me a year");
+            //int Year = Convert.ToInt32(Console.ReadLine());
+            //int MonthsNumber = DaysOfMonth(Months,Year);
+            //string YearisLeapYear = leapYear(Year);
+            //Console.WriteLine($"Number of days in this month : {MonthsNumber} and the Year {YearisLeapYear}");
+            //public static string leapYear(int year)
+            //{
+            //    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            //    {
+            //        return " is a  leapYear ";
+            //    }
+            //    else
+            //    {
+            //        return " is  not a  leapYear ";
+            //    }
+
+
+            //}
+            //public static int DaysOfMonth(int months, int year)
+            //{
+            //    switch (months)
+            //    {
+            //        case 1:
+            //        case 3:
+            //        case 5:
+            //        case 7:
+            //        case 8:
+            //        case 10:
+            //        case 12:
+            //            return 31;
+            //        case 4:
+            //        case 6:
+            //        case 9:
+            //        case 11:
+            //            return 30;
+            //        case 2:
+            //            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+            //            {
+            //                return 29;
+            //            }
+            //            else
+            //            {
+            //                return 28;
+            //            }
+            //        default:
+            //            throw new ArgumentException("Invalid month value. Month should be between 1 and 12.");
+            //    }
+            //}
+
+            // Challenges 29 -----------------------------------------------------------
+            //Console.WriteLine("Enter Number ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //if (number % 2 == 0)
+            //{
+            //    Console.WriteLine($"{number} is even.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{number} is odd.");
+            //}
+
+            // Challenges 30 -----------------------------------------------------------
+            //Console.WriteLine("Number of the members travelling");
+            //decimal Members = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Capacity of coatch");
+            //decimal Capacity = int.Parse(Console.ReadLine());
+
+            //int Calc = (int)(Members / Capacity);
+            //Console.WriteLine("Number of full coatch : " + Calc);
+
+            //if(Members % Capacity == 0)
+            //{
+            //    Console.WriteLine("Number of last passengers on the last coatch : " + Capacity);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Number of last passengers on the last coatch : " + Members % Capacity);
+
+            //}
+            //-------------------------------------------------------------------------------------------------
+            //Console.WriteLine("Number of the members travelling");
+            //decimal Members = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Capacity of coatch");
+            //decimal Capacity = int.Parse(Console.ReadLine());
+            //int Calc = (int)(Members / Capacity);
+            //decimal NonCoatch = (Members / Capacity) - Calc;
+            //decimal Lastplayer = (NonCoatch * Capacity);
+            //int roundedNumber = (int)Math.Round(Lastplayer);
+            //Console.WriteLine("Number of full coatch : " + Calc);
+            //Console.WriteLine("Number of last passengers on the last coatch : " + roundedNumber);
+
+            // Challenges 31 -----------------------------------------------------------
+
+
+
+
+
+
+
+        }
 
     }
+
+
+
 }
+
