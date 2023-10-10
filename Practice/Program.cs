@@ -742,12 +742,54 @@ namespace Practice
             //Console.WriteLine("Number of last passengers on the last coatch : " + roundedNumber);
 
             // Challenges 31 -----------------------------------------------------------
+            //Console.WriteLine("Enter starting Hour ");
+            //int StartHour = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter starting minutes ");
+            //int Startminutes = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter End Hour ");
+            //int EndtHour = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter End minutes ");
+            //int Endtminutes = int.Parse(Console.ReadLine());
 
+            //int sumHour = StartHour + EndtHour;
+            //int sumMinute = Startminutes + Endtminutes;
 
+            //if(sumHour > 12)
+            //{
+            //    var cal =  sumHour - 12; 
+            //    sumHour = cal;
+            //}
+            //if (sumMinute > 59)
+            //{
+            //    sumHour++;
+            //    var cal = sumMinute - 60;
+            //    sumMinute = cal;
 
+            //}
+            //Console.WriteLine($"the finishing time is :  {sumHour}:{sumMinute}");
 
+            // Challenges 32 -----------------------------------------------------------
+            //for (int i = 0;i<= 10 ;i++)
+            //{
+            //    Console.WriteLine("Hello world");
+            //}
 
+            // Challenges 33 -----------------------------------------------------------
+            Console.WriteLine("Enter 10 number Hour ");
 
+            int largnumber = 0;
+            for (int i = 0; i < 4; i++)
+            {
+               int input = int.Parse(Console.ReadLine());
+               for (int j = 0; j < input; j++)
+                {
+                    if (input > largnumber)
+                    {
+                        largnumber = input;
+                    }
+                }
+            }
+            Console.WriteLine("the bih number is : " + largnumber);
 
         }
 
